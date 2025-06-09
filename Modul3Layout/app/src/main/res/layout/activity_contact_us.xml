@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hubungi Kami"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Tombol Panggilan Telepon -->
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="📞 Hubungi via Telepon"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Tombol Kirim Email -->
+    <Button
+        android:id="@+id/btnEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="✉️ Hubungi via Email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/btnCall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Tombol Kunjungi Website -->
+    <Button
+        android:id="@+id/btnWebsite"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="🌍 Kunjungi Website"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/btnEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

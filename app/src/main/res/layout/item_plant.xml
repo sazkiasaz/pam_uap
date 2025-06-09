@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginTop="16dp">
+
+    <!-- Card utama -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="1dp" />
+
+            <!-- Text & Button -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/tv_plant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Tanaman"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tv_plant_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_hapus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hapus"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#FF4F4F"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="8dp" />
+
+                    <Button
+                        android:id="@+id/btn_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Detail"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="#5DBB63"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Gambar di kiri atas -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bg_container"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/iv_plant_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_plant"
+            android:contentDescription="@string/plant_image_description" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "47761120011",
+    "project_id": "pam-uap-70084",
+    "storage_bucket": "pam-uap-70084.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47761120011:android:d437ab7848ed872b2aa00e",
+        "android_client_info": {
+          "package_name": "com.example.uappam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiUjigSfcQoJE8oC0MzWeLOyREKGcAv-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EDF4FF"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_plant" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#70C05B"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum punya akun? Register disini"
+        android:textColor="#0000FF"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

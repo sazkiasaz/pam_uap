@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android
+"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka kedua"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/radioTambah" android:text="+" />
+        <RadioButton android:id="@+id/radioKurang" android:text="-" />
+        <RadioButton android:id="@+id/radioKali" android:text="×" />
+        <RadioButton android:id="@+id/radioBagi" android:text="÷" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung" />
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/graphic_guruji"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"/>
+
+    <!-- Sub Judul -->
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn Graphic and UI/UX designing in Hindi\nfor free with live projects."
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Input Email -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Email Address"
+        android:background="@drawable/bg_input"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/subTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <!-- Input Password -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:background="@drawable/bg_input"
+        android:paddingLeft="16dp"
+        android:textSize="16sp"
+        android:textColorHint="#FFFFFF"
+        android:textColor="@android:color/white"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/emailInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <!-- Tombol LOGIN -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:background="@drawable/bg_button"
+        android:textColor="#900088FF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="14dp"/>
+
+    <!-- Ikon Sosial Media -->
+    <LinearLayout
+        android:id="@+id/socialButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/forgotPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="65dp">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:src="@drawable/gmail"
+            android:layout_marginEnd="33dp"/>
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:src="@drawable/facebook"
+            android:layout_marginEnd="33dp"/>
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:src="@drawable/twitter"/>
+    </LinearLayout>
+
+    <!-- Register -->
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register now"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/socialButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

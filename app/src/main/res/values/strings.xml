@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">crud_uap</string>
+    <string name="app_logo">LOGO</string>
+    <string name="sign_in">Login</string>
+    <string name="sign_up">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="hapus">Hapus</string>
+    <string name="detail">Detail</string>
+    <string name="plant_image_description">Plant Photo</string>
+
+    <string name="update">Update</string>
+    <string name="add">Tambah</string>
+    <string name="save">Simpan</string>
+
+</resources>

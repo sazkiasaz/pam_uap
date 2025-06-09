@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Modul3Layout" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@null</item>
+    </style>
+</resources>
